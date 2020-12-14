@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+}
+*,*:focus,*:hover{
+    outline:none;
+}
+
+
+body {
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Inter', sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+img {
+    max-width: 100%;
+}
+
+.mobile-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px 2px #3333331A;
+    border-radius: 3px; 
+    overflow: hidden;
+    width: 600px;
+}  
+header {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; 
+}
+
+header input {
+    background-color: #eee;
+    border:none;
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 0.5rem 1rem; 
+}
+header button {
+    background-color: transparent;
+    border:none;
+    color: rgb(138, 129,141);
+    font-size: 1.5rem;
+    margin-left: 10px; 
+}
+.fav-container {
+    background-color: rgb(247, 243, 246);
+    padding: 0.25rem 1rem;
+    text-align: center;
+    
+}
+.fav-meals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+.fav-meals li {
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+    width: 100px;
+}
+
+.fav-meals li .clear {
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    font-size: 1.2rem; 
+    opacity: 0.5;
+
+}
+
+.fav-meals li:hover .clear {
+    opacity : 1;
+}
+.fav-meals li img {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #3333331A;
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
+} 
+
+.fav-meals li span {
+    display: inline-block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 75px;
+
+}
+
+.fav-meals li:hover span {
+    white-space: normal;
+    overflow: auto;
+}
+.search {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.meal{
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px #3333331A;
+    margin: 1.5rem; 
+    overflow: hidden;
+}
+
+.meal-header {
+    position: relative;
+}
+
+.meal-header .random {
+    position: absolute;
+    top: 1rem; 
+    background-color: white;
+    padding: 0.25rem 1rem; 
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+
+.meal-header img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.meal-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.meal-body h4 {
+    margin: 0;
+
+}
+
+.meal-body .heart_btn {
+    border: none;
+    color: gray;
+    background-color: transparent;
+    font-size: 1.2rem;
+    margin: 0.5rem; 
+    width: 4vh;
+    height: 4vh;
+    border:transparent;
+}
+.meal-body .heart_btn.active {
+    color: rebeccapurple;
+
+}
+.meal-body .heart_btn.focus {
+    border:none;
+    background:none;
+    padding: 0;
+}
+.meal-body .heart {
+    align-items: center;
+} 
+
+.meal-ins {
+
+    display: flex;
+
+}
+
+.popup-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+}
+
+.popup-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 2rem;
+    position: relative;
+    overflow: auto;
+    max-height: 100vh;
+    max-width: 600px;
+    width: 100%;
+}
+
+.popup .close-popup {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.meal-info h1 {
+    text-align: center;
+}
+
+.meal-info {
+    padding: 1rem;
+}
+
+.meal-info > a {
+    text-overflow: ellipsis;
+}
