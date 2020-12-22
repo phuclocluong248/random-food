@@ -10,7 +10,7 @@ const popupCloseBtn = document.getElementById("close-popup");
 
 function getRandomMeal() {
     // return new Promise((resolve, reject) => {
-        fetch("https://lobe-random-recipe.herokuapp.com/api/random").then(response => {
+        fetch("https://www.themealdb.com/api/json/v1/1/random.php").then(response => {
             return response.json()
         })
         .then(data => {
@@ -128,7 +128,7 @@ function removeMealFromLS(mealId) {
 
 function getMealId(Id) {
     return new Promise((resolve, reject) => {
-        fetch("https://lobe-random-recipe.herokuapp.com/api/idMeal/" + Id).then(response => {
+        fetch("https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + Id).then(response => {
             return response.json()
         })
         .then(data => {
@@ -142,7 +142,7 @@ function getMealId(Id) {
 
 function getMealSearch(term) {
     return new Promise((resolve, reject) => {
-        fetch("https://lobe-random-recipe.herokuapp.com/api/search/" + term).then(response => {
+        fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + term).then(response => {
             return response.json()
         })
         .then(data => {
