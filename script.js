@@ -1,1 +1,210 @@
-var _0x463d=["\x6D\x65\x61\x6C\x73","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x66\x61\x76\x2D\x6D\x65\x61\x6C\x73","\x73\x65\x61\x72\x63\x68\x5F\x62\x74\x6E","\x73\x65\x61\x72\x63\x68\x2D\x74\x65\x72\x6D","\x63\x6C\x6F\x73\x65\x2D\x70\x6F\x70\x75\x70","\x6D\x65\x61\x6C\x2D\x70\x6F\x70\x75\x70","\x6D\x65\x61\x6C\x2D\x69\x6E\x66\x6F","\x6C\x6F\x67","\x74\x68\x65\x6E","\x6A\x73\x6F\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6C\x6F\x62\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x72\x65\x63\x69\x70\x65\x2E\x68\x65\x72\x6F\x6B\x75\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x72\x61\x6E\x64\x6F\x6D","\x64\x69\x76","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x6D\x65\x61\x6C","\x61\x64\x64","\x63\x6C\x61\x73\x73\x4C\x69\x73\x74","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x65\x61\x6C\x2D\x68\x65\x61\x64\x65\x72\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x68\x33\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x61\x6E\x64\x6F\x6D\x22\x3E\x52\x61\x6E\x64\x6F\x6D\x20\x52\x65\x63\x69\x70\x65\x3C\x2F\x68\x33\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x69\x6D\x67\x20\x63\x6C\x61\x73\x73\x20\x3D\x20\x22\x6D\x65\x61\x6C\x2D\x74\x68\x75\x6D\x62\x22\x20\x69\x64\x3D\x22\x6D\x65\x61\x6C\x2D\x74\x68\x75\x6D\x62\x22\x20\x73\x72\x63\x3D\x22","\x73\x74\x72\x4D\x65\x61\x6C\x54\x68\x75\x6D\x62","\x22\x20\x61\x6C\x74\x3D\x22","\x73\x74\x72\x4D\x65\x61\x6C","\x22\x2F\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6D\x65\x61\x6C\x2D\x62\x6F\x64\x79\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x68\x34\x20\x69\x64\x3D\x22\x6D\x65\x61\x6C\x2D\x6E\x61\x6D\x65\x22\x3E","\x3C\x2F\x68\x34\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x62\x75\x74\x74\x6F\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x68\x65\x61\x72\x74\x5F\x62\x74\x6E\x22\x20\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x69\x20\x63\x6C\x61\x73\x73\x20\x3D\x20\x22\x66\x61\x73\x20\x66\x61\x2D\x68\x65\x61\x72\x74\x22\x3E\x3C\x2F\x69\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x62\x75\x74\x74\x6F\x6E\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x2E\x6D\x65\x61\x6C\x2D\x74\x68\x75\x6D\x62","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x2E\x6D\x65\x61\x6C\x2D\x62\x6F\x64\x79\x20\x2E\x68\x65\x61\x72\x74\x5F\x62\x74\x6E","\x63\x6C\x69\x63\x6B","\x61\x63\x74\x69\x76\x65","\x63\x6F\x6E\x74\x61\x69\x6E\x73","\x69\x64\x4D\x65\x61\x6C","\x72\x65\x6D\x6F\x76\x65","\x74\x6F\x67\x67\x6C\x65","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x73\x74\x72\x49\x6E\x67\x72\x65\x64\x69\x65\x6E\x74","\x20\x2D\x20","\x73\x74\x72\x4D\x65\x61\x73\x75\x72\x65","\x20","\x70\x75\x73\x68","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x68\x31\x3E\x20","\x20\x3C\x2F\x68\x31\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22","\x22\x2F\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x70\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x73\x74\x72\x49\x6E\x73\x74\x72\x75\x63\x74\x69\x6F\x6E\x73","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x70\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x68\x33\x3E\x49\x6E\x67\x72\x65\x64\x69\x65\x6E\x74\x73\x3A\x20\x3C\x2F\x68\x33\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x75\x6C\x3E\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x6A\x6F\x69\x6E","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x6C\x69\x3E","\x3C\x2F\x6C\x69\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x6D\x61\x70","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x75\x6C\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x68\x33\x3E\x20\x56\x69\x64\x65\x6F\x20\x3C\x2F\x68\x33\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x61\x20\x68\x72\x65\x66\x3D\x22","\x73\x74\x72\x59\x6F\x75\x74\x75\x62\x65","\x22\x20\x74\x61\x72\x67\x65\x74\x3D\x22\x5F\x62\x6C\x61\x6E\x6B\x22\x3E\x22","\x22\x3C\x2F\x61\x3E\x0D\x0A\x20\x20\x20\x20","\x68\x69\x64\x64\x65\x6E","\x6D\x65\x61\x6C\x49\x64\x73","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x73\x65\x74\x49\x74\x65\x6D","\x67\x65\x74\x49\x74\x65\x6D","\x70\x61\x72\x73\x65","\x66\x69\x6C\x74\x65\x72","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6C\x6F\x62\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x72\x65\x63\x69\x70\x65\x2E\x68\x65\x72\x6F\x6B\x75\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x69\x64\x4D\x65\x61\x6C\x2F","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6C\x6F\x62\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x72\x65\x63\x69\x70\x65\x2E\x68\x65\x72\x6F\x6B\x75\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x73\x65\x61\x72\x63\x68\x2F","\x6C\x65\x6E\x67\x74\x68","\x6C\x69","\x0D\x0A\x20\x20\x20\x20\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22","\x22\x20\x69\x64\x3D\x22","\x22\x3E\x3C\x73\x70\x61\x6E\x3E","\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x2F\x68\x31\x3E\x0D\x0A\x20\x20\x20\x20\x3C\x62\x75\x74\x74\x6F\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6C\x65\x61\x72\x22\x20\x3E\x3C\x69\x20\x63\x6C\x61\x73\x73\x20\x3D\x20\x22\x66\x61\x73\x20\x66\x61\x2D\x77\x69\x6E\x64\x6F\x77\x2D\x63\x6C\x6F\x73\x65\x22\x3E\x3C\x2F\x69\x3E\x3C\x2F\x62\x75\x74\x74\x6F\x6E\x3E\x0D\x0A\x20\x20\x20\x20","\x2E\x63\x6C\x65\x61\x72","\x69\x6D\x67","\x76\x61\x6C\x75\x65","\x66\x6F\x72\x45\x61\x63\x68"];const meals=document[_0x463d[1]](_0x463d[0]);const favoriteContainer=document[_0x463d[1]](_0x463d[2]);const search_btn=document[_0x463d[1]](_0x463d[3]);const searchTerm=document[_0x463d[1]](_0x463d[4]);const close_btn=document[_0x463d[1]](_0x463d[5]);const mealPopup=document[_0x463d[1]](_0x463d[6]);const mealInfoEl=document[_0x463d[1]](_0x463d[7]);const popupCloseBtn=document[_0x463d[1]](_0x463d[5]);function getRandomMeal(){fetch(_0x463d[11])[_0x463d[9]]((_0xe2d5xc)=>{return _0xe2d5xc[_0x463d[10]]()})[_0x463d[9]]((_0xe2d5xa)=>{const _0xe2d5xb=_0xe2d5xa[_0x463d[0]][0];currentMeal= _0xe2d5xb;console[_0x463d[8]](currentMeal);addMeal(_0xe2d5xb,true)})}getRandomMeal();fetchFavMeals();function addMeal(_0xe2d5xe,_0xe2d5xf= false){const _0xe2d5x10=document[_0x463d[13]](_0x463d[12]);_0xe2d5x10[_0x463d[16]][_0x463d[15]](_0x463d[14]);_0xe2d5x10[_0x463d[17]]= `${_0x463d[18]}${_0xe2d5xf?`${_0x463d[19]}`:_0x463d[20]}${_0x463d[21]}${_0xe2d5xe[_0x463d[22]]}${_0x463d[23]}${_0xe2d5xe[_0x463d[24]]}${_0x463d[25]}${_0xe2d5xe[_0x463d[24]]}${_0x463d[26]}`;const _0xe2d5x11=_0xe2d5x10[_0x463d[28]](_0x463d[27]);const _0xe2d5x12=_0xe2d5x10[_0x463d[28]](_0x463d[29]);_0xe2d5x12[_0x463d[36]](_0x463d[30],()=>{if(_0xe2d5x12[_0x463d[16]][_0x463d[32]](_0x463d[31])){removeMealFromLS(_0xe2d5xe[_0x463d[33]]);_0xe2d5x12[_0x463d[16]][_0x463d[34]](_0x463d[31])}else {addMealToLS(_0xe2d5xe[_0x463d[33]]);_0xe2d5x12[_0x463d[16]][_0x463d[35]](_0x463d[31]);addMealToFav(_0xe2d5xe)};favoriteContainer[_0x463d[17]]= _0x463d[20];fetchFavMeals()});_0xe2d5x11[_0x463d[36]](_0x463d[30],()=>{showMealInfo(_0xe2d5xe)});meals[_0x463d[37]](_0xe2d5x10)}function showMealInfo(_0xe2d5xe){mealInfoEl[_0x463d[17]]= _0x463d[20];const _0xe2d5x14=document[_0x463d[13]](_0x463d[12]);const _0xe2d5x15=[];for(let _0xe2d5x16=1;_0xe2d5x16<= 20;_0xe2d5x16++){if((_0xe2d5xe[_0x463d[38]+ _0xe2d5x16]!== _0x463d[20])&& (_0xe2d5xe[_0x463d[38]+ _0xe2d5x16]!== null)){_0xe2d5x15[_0x463d[42]](`${_0x463d[20]}${_0xe2d5xe[_0x463d[38]+ _0xe2d5x16]}${_0x463d[39]}${_0xe2d5xe[_0x463d[40]+ _0xe2d5x16]}${_0x463d[41]}`)}else {break}};mealInfoEl[_0x463d[37]](_0xe2d5x14);console[_0x463d[8]](_0xe2d5xe);_0xe2d5x14[_0x463d[17]]= `${_0x463d[43]}${_0xe2d5xe[_0x463d[24]]}${_0x463d[44]}${_0xe2d5xe[_0x463d[22]]}${_0x463d[23]}${_0xe2d5xe[_0x463d[24]]}${_0x463d[45]}${_0xe2d5xe[_0x463d[46]]}${_0x463d[47]}${_0xe2d5x15[_0x463d[51]]((_0xe2d5x17)=>{return `${_0x463d[49]}${_0xe2d5x17}${_0x463d[50]}`})[_0x463d[48]](_0x463d[41])}${_0x463d[52]}${_0xe2d5xe[_0x463d[53]]}${_0x463d[54]}${_0xe2d5xe[_0x463d[53]]}${_0x463d[55]}`;mealPopup[_0x463d[16]][_0x463d[34]](_0x463d[56])}function addMealToLS(_0xe2d5x19){const _0xe2d5x1a=getMealsFromLS();localStorage[_0x463d[59]](_0x463d[57],JSON[_0x463d[58]]([..._0xe2d5x1a,_0xe2d5x19]))}function getMealsFromLS(){const _0xe2d5x1a=JSON[_0x463d[61]](localStorage[_0x463d[60]](_0x463d[57]));return _0xe2d5x1a=== null?[]:_0xe2d5x1a}function removeMealFromLS(_0xe2d5x19){const _0xe2d5x1a=getMealsFromLS();localStorage[_0x463d[59]](_0x463d[57],JSON[_0x463d[58]](_0xe2d5x1a[_0x463d[62]]((_0xe2d5x1d)=>{return _0xe2d5x1d!== _0xe2d5x19})))}function getMealId(_0xe2d5x1f){return  new Promise((_0xe2d5x20,_0xe2d5x21)=>{fetch(_0x463d[63]+ _0xe2d5x1f)[_0x463d[9]]((_0xe2d5xc)=>{return _0xe2d5xc[_0x463d[10]]()})[_0x463d[9]]((_0xe2d5xa)=>{const _0xe2d5x22=_0xe2d5xa[_0x463d[0]][0];_0xe2d5x20(_0xe2d5x22)})})}function getMealSearch(_0xe2d5x24){return  new Promise((_0xe2d5x20,_0xe2d5x21)=>{fetch(_0x463d[64]+ _0xe2d5x24)[_0x463d[9]]((_0xe2d5xc)=>{return _0xe2d5xc[_0x463d[10]]()})[_0x463d[9]]((_0xe2d5xa)=>{_0xe2d5x20(_0xe2d5xa[_0x463d[0]])})})}async function fetchFavMeals(){favoriteContainer[_0x463d[17]]= _0x463d[20];const _0xe2d5x1a=getMealsFromLS();const meals=[];for(let _0xe2d5x16=0;_0xe2d5x16< _0xe2d5x1a[_0x463d[65]];_0xe2d5x16++){const _0xe2d5x19=_0xe2d5x1a[_0xe2d5x16];meal=  await getMealId(_0xe2d5x19);addMealToFav(meal)}}function addMealToFav(_0xe2d5xe){const _0xe2d5x27=document[_0x463d[13]](_0x463d[66]);_0xe2d5x27[_0x463d[17]]= `${_0x463d[67]}${_0xe2d5xe[_0x463d[22]]}${_0x463d[23]}${_0xe2d5xe[_0x463d[24]]}${_0x463d[68]}${_0xe2d5xe[_0x463d[33]]}${_0x463d[69]}${_0xe2d5xe[_0x463d[24]]}${_0x463d[70]}`;const _0xe2d5x28=_0xe2d5x27[_0x463d[28]](_0x463d[71]);const _0xe2d5x29=_0xe2d5x27[_0x463d[28]](_0x463d[72]);_0xe2d5x28[_0x463d[36]](_0x463d[30],()=>{removeMealFromLS(_0xe2d5xe[_0x463d[33]]);fetchFavMeals()});_0xe2d5x29[_0x463d[36]](_0x463d[30],()=>{showMealInfo(_0xe2d5xe)});favoriteContainer[_0x463d[37]](_0xe2d5x27)}search_btn[_0x463d[36]](_0x463d[30],async ()=>{meals[_0x463d[17]]= _0x463d[20];const _0xe2d5x24=searchTerm[_0x463d[73]];console[_0x463d[8]](_0xe2d5x24);const _0xe2d5x2a= await getMealSearch(_0xe2d5x24);console[_0x463d[8]](_0xe2d5x2a);if(_0xe2d5x2a){_0xe2d5x2a[_0x463d[74]]((_0xe2d5x10)=>{addMeal(_0xe2d5x10)})}});popupCloseBtn[_0x463d[36]](_0x463d[30],()=>{mealPopup[_0x463d[16]][_0x463d[15]](_0x463d[56])})
+const meals = document.getElementById('meals'); 
+const favoriteContainer = document.getElementById("fav-meals")
+const search_btn = document.getElementById("search_btn");
+const searchTerm = document.getElementById("search-term");
+const close_btn = document.getElementById("close-popup");
+
+const mealPopup = document.getElementById("meal-popup");
+const mealInfoEl = document.getElementById("meal-info");
+const popupCloseBtn = document.getElementById("close-popup");
+
+function getRandomMeal() {
+    // return new Promise((resolve, reject) => {
+        fetch("https://lobe-random-recipe.herokuapp.com/api/random").then(response => {
+            return response.json()
+        })
+        .then(data => {
+            const randomMeal = data.meals[0];
+            currentMeal = randomMeal;
+            console.log(currentMeal);
+            // resolve(randomMeal);
+            addMeal(randomMeal, true); 
+        });
+    // });
+}
+getRandomMeal();
+fetchFavMeals();
+function addMeal(mealData,random = false) {
+        const meal = document.createElement("div"); 
+        meal.classList.add("meal"); 
+        meal.innerHTML = `
+        <div class="meal-header">
+            ${
+                random 
+                    ? `
+            <h3 class="random">Random Recipe</h3>
+            ` 
+                        : ""
+            }
+            <img class = "meal-thumb" id="meal-thumb" src="${mealData.strMealThumb}" alt="${mealData.strMeal}"/>
+        </div>
+        <div class="meal-body">
+            <h4 id="meal-name">${mealData.strMeal}</h4>
+            <button class="heart_btn" >
+                <i class = "fas fa-heart"></i>
+            </button>
+           
+        </div>
+               
+        `
+        const mealThumb = meal.querySelector(".meal-thumb");
+        const btn = meal.querySelector('.meal-body .heart_btn');
+        btn.addEventListener('click', () => {
+            if (btn.classList.contains('active')){
+                removeMealFromLS(mealData.idMeal);
+                btn.classList.remove('active');
+                
+            } else {
+                addMealToLS(mealData.idMeal);
+                btn.classList.toggle('active');
+                addMealToFav(mealData);
+                
+            }
+            favoriteContainer.innerHTML = '';
+            fetchFavMeals();
+        });
+        mealThumb.addEventListener('click', () =>{
+            showMealInfo(mealData);
+        });
+        meals.appendChild(meal); 
+
+                
+       
+};
+function showMealInfo(mealData) {
+    mealInfoEl.innerHTML = '';
+    const mealEl = document.createElement('div');
+    //get ingredients and measure
+    const ingredients = [];
+     
+    for (let i=1; i<=20; i++){
+        if ((mealData['strIngredient'+i] !== "") &&(mealData['strIngredient'+i] !== null)) {
+            ingredients.push(`${mealData['strIngredient'+i]} - ${mealData['strMeasure'+i]} `);
+       } else {
+           break;
+       }
+    };
+    mealInfoEl.appendChild(mealEl);
+    console.log(mealData);
+    mealEl.innerHTML = `
+                        <h1> ${mealData.strMeal} </h1>
+                        <img src="${mealData.strMealThumb}" alt="${mealData.strMeal}"/>
+                        <p>
+                        ${mealData.strInstructions}
+                        </p>
+                        <h3>Ingredients: </h3>
+                        <ul> 
+                            ${ingredients.
+                                map(
+                                    (ing) => `
+                                    <li>${ing}</li>
+                                    `
+                                    )
+                                    .join(' ')}
+                        </ul>
+                        <h3> Video </h3>
+                        <a href="${mealData.strYoutube}" target="_blank">"${mealData.strYoutube}"</a>
+    `;
+    mealPopup.classList.remove('hidden');
+
+}
+
+function addMealToLS(mealId) {
+    const mealIds = getMealsFromLS();
+    localStorage.setItem('mealIds', JSON.stringify ([...mealIds, mealId]));
+}
+function getMealsFromLS() {
+    const mealIds = JSON.parse(localStorage.getItem("mealIds")); 
+    
+    return mealIds === null ? [] : mealIds;
+}
+
+function removeMealFromLS(mealId) {
+    const mealIds = getMealsFromLS();
+
+    localStorage.setItem('mealIds', JSON.stringify(mealIds.filter(id => id !== mealId)));
+}
+
+
+function getMealId(Id) {
+    return new Promise((resolve, reject) => {
+        fetch("https://lobe-random-recipe.herokuapp.com/api/idMeal/" + Id).then(response => {
+            return response.json()
+        })
+        .then(data => {
+            const mealDataId = data.meals[0];
+            
+            resolve(mealDataId);
+        });
+    });
+}
+
+
+function getMealSearch(term) {
+    return new Promise((resolve, reject) => {
+        fetch("https://lobe-random-recipe.herokuapp.com/api/search/" + term).then(response => {
+            return response.json()
+        })
+        .then(data => {
+            resolve(data.meals);
+        });
+    });
+
+}
+async function fetchFavMeals() { 
+    //clean the container 
+    favoriteContainer.innerHTML = ''; 
+    const mealIds = getMealsFromLS();
+    const meals = [];
+    for (let i = 0; i<mealIds.length; i++) {
+        const mealId = mealIds[i];
+        meal = await getMealId(mealId);
+        addMealToFav(meal);
+    };
+               
+    //TODO: add them to the screen; 
+}
+
+function addMealToFav(mealData) {
+    const favMeal = document.createElement("li"); 
+    
+    favMeal.innerHTML = `
+    <img src="${mealData.strMealThumb}" alt="${mealData.strMeal}" id="${mealData.idMeal}"><span>${mealData.strMeal}</span></h1>
+    <button class="clear" ><i class = "fas fa-window-close"></i></button>
+    `
+    const cls_btn = favMeal.querySelector(".clear"); 
+    const favImg = favMeal.querySelector("img");
+    cls_btn.addEventListener("click", () => {
+        removeMealFromLS(mealData.idMeal);
+
+        fetchFavMeals();
+    })
+    favImg.addEventListener("click", () => {
+        showMealInfo(mealData)
+    })
+    favoriteContainer.appendChild(favMeal); 
+   
+} 
+search_btn.addEventListener('click', async () => {
+    //clean container
+    meals.innerHTML = "";
+
+    const term = searchTerm.value; 
+    console.log(term);
+    const mealSearch = await getMealSearch(term);
+    console.log(mealSearch);
+    if (mealSearch) {
+        mealSearch.forEach((meal) => {
+        addMeal(meal);
+    });
+    }
+    
+
+}); 
+
+popupCloseBtn.addEventListener("click", () => {
+        mealPopup.classList.add("hidden");
+});
+
+
+
