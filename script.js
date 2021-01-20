@@ -16,7 +16,7 @@ function getRandomMeal() {
         .then(data => {
             const randomMeal = data.meals[0];
             currentMeal = randomMeal;
-            console.log(currentMeal);
+            //console.log(currentMeal);
             // resolve(randomMeal);
             addMeal(randomMeal, true); 
         });
