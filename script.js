@@ -85,7 +85,7 @@ function showMealInfo(mealData) {
        }
     };
     mealInfoEl.appendChild(mealEl);
-    console.log(mealData);
+    //console.log(mealData);
     mealEl.innerHTML = `
                         <h1> ${mealData.strMeal} </h1>
                         <img src="${mealData.strMealThumb}" alt="${mealData.strMeal}"/>
@@ -190,9 +190,9 @@ search_btn.addEventListener('click', async () => {
     meals.innerHTML = "";
 
     const term = searchTerm.value; 
-    console.log(term);
+    //console.log(term);
     const mealSearch = await getMealSearch(term);
-    console.log(mealSearch);
+    //console.log(mealSearch);
     if (mealSearch) {
         mealSearch.forEach((meal) => {
         addMeal(meal);
