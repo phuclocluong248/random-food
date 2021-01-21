@@ -1,3 +1,4 @@
+//GET ELEMENT
 const meals = document.getElementById('meals'); 
 const favoriteContainer = document.getElementById("fav-meals")
 const search_btn = document.getElementById("search_btn");
@@ -8,6 +9,7 @@ const mealPopup = document.getElementById("meal-popup");
 const mealInfoEl = document.getElementById("meal-info");
 const popupCloseBtn = document.getElementById("close-popup");
 
+//Call API for RandomMeal
 function getRandomMeal() {
     // return new Promise((resolve, reject) => {
         fetch("https://lobe-random-recipe.herokuapp.com/api/random").then(response => {
@@ -17,15 +19,21 @@ function getRandomMeal() {
             const randomMeal = data.meals[0];
             currentMeal = randomMeal;
             //console.log(currentMeal);
-            // resolve(randomMeal);
             addMeal(randomMeal, true); 
         });
     // });
 }
+//Get Random Meal everytime refresh
 getRandomMeal();
+//Get Favorite meal from local storage and show it
 fetchFavMeals();
-function addMeal(mealData,random = false) {
+
+//Show meal on page
+function addMeal(mealData,random = false) { 
+        
         const meal = document.createElement("div"); 
+        
+        //Add meal HTML
         meal.classList.add("meal"); 
         meal.innerHTML = `
         <div class="meal-header">
@@ -47,8 +55,10 @@ function addMeal(mealData,random = false) {
         </div>
                
         `
-        const mealThumb = meal.querySelector(".meal-thumb");
+        const mealThumb = meal.querySelector(".meal-thumb"); 
         const btn = meal.querySelector('.meal-body .heart_btn');
+        
+        //Add eventlistener when we click Like --> write or delete meal Liked in Local storage 
         btn.addEventListener('click', () => {
             if (btn.classList.contains('active')){
                 removeMealFromLS(mealData.idMeal);
@@ -71,9 +81,12 @@ function addMeal(mealData,random = false) {
                 
        
 };
+
+//Add mealinfomation when click on meal Image
 function showMealInfo(mealData) {
     mealInfoEl.innerHTML = '';
     const mealEl = document.createElement('div');
+    
     //get ingredients and measure
     const ingredients = [];
      
@@ -85,7 +98,6 @@ function showMealInfo(mealData) {
        }
     };
     mealInfoEl.appendChild(mealEl);
-    //console.log(mealData);
     mealEl.innerHTML = `
                         <h1> ${mealData.strMeal} </h1>
                         <img src="${mealData.strMealThumb}" alt="${mealData.strMeal}"/>
@@ -106,26 +118,29 @@ function showMealInfo(mealData) {
                         <a href="${mealData.strYoutube}" target="_blank">"${mealData.strYoutube}"</a>
     `;
     mealPopup.classList.remove('hidden');
-
 }
 
+//ADD meal to Local Storage
 function addMealToLS(mealId) {
     const mealIds = getMealsFromLS();
     localStorage.setItem('mealIds', JSON.stringify ([...mealIds, mealId]));
 }
+
+//Get meal from Local Storage
 function getMealsFromLS() {
     const mealIds = JSON.parse(localStorage.getItem("mealIds")); 
     
     return mealIds === null ? [] : mealIds;
 }
 
+//Delete Meal from LocalStorage
 function removeMealFromLS(mealId) {
     const mealIds = getMealsFromLS();
 
     localStorage.setItem('mealIds', JSON.stringify(mealIds.filter(id => id !== mealId)));
 }
 
-
+//Get meal by Id from API
 function getMealId(Id) {
     return new Promise((resolve, reject) => {
         fetch("https://lobe-random-recipe.herokuapp.com/api/idMeal/" + Id).then(response => {
@@ -139,7 +154,7 @@ function getMealId(Id) {
     });
 }
 
-
+//Get meal by Search from API
 function getMealSearch(term) {
     return new Promise((resolve, reject) => {
         fetch("https://lobe-random-recipe.herokuapp.com/api/search/" + term).then(response => {
@@ -151,6 +166,8 @@ function getMealSearch(term) {
     });
 
 }
+
+//Update Favorite Meal
 async function fetchFavMeals() { 
     //clean the container 
     favoriteContainer.innerHTML = ''; 
@@ -162,9 +179,10 @@ async function fetchFavMeals() {
         addMealToFav(meal);
     };
                
-    //TODO: add them to the screen; 
+    
 }
 
+//Add a meal to Favorite bar when user click Like
 function addMealToFav(mealData) {
     const favMeal = document.createElement("li"); 
     
@@ -184,8 +202,8 @@ function addMealToFav(mealData) {
     })
     favoriteContainer.appendChild(favMeal); 
    
-} 
-search_btn.addEventListener('click', async () => {
+    } 
+    search_btn.addEventListener('click', async () => {
     //clean container
     meals.innerHTML = "";
 
@@ -196,7 +214,7 @@ search_btn.addEventListener('click', async () => {
     if (mealSearch) {
         mealSearch.forEach((meal) => {
         addMeal(meal);
-    });
+});
     }
     
 
