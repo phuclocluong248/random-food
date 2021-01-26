@@ -114,8 +114,8 @@ function showMealInfo(mealData) {
                                     )
                                     .join(' ')}
                         </ul>
-                        <h3> Video </h3>
-                        <a href="${mealData.strYoutube}">${mealData.strYoutube}</a>
+                        <h3> Tutorial </h3>
+                        <iframe width="100%" height="300" src="${mealData.strYoutube}" frameborder="0" allow="accelerometer; autoplay="false"; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `;
     mealPopup.classList.remove('hidden');
 }
