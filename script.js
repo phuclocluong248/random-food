@@ -115,7 +115,9 @@ function showMealInfo(mealData) {
                                     .join(' ')}
                         </ul>
                         <h3> Video </h3>
-                        <a href="${mealData.strYoutube}" target="_blank">"${mealData.strYoutube}"</a>
+                        <video src="${mealData.strYoutube}" controls>
+                            <p> Votre navigateur ne supporte pas ce format video </p>
+                        </video>
     `;
     mealPopup.classList.remove('hidden');
 }
