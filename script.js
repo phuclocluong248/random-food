@@ -115,7 +115,7 @@ function showMealInfo(mealData) {
                                     .join(' ')}
                         </ul>
                         <h3> Tutorial </h3>
-                        <a target="_blank">${mealData.strYoutube}</a>
+                        <a href="${mealData.strYoutube}" target="_blank">Tutorial</a>
     `;
     mealPopup.classList.remove('hidden');
 }
