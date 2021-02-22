@@ -1,0 +1,110 @@
+<Taches: tao 1 page tren SPA 
+- Them page vao router 
+- Tao controller cho page: 
+   
+  + Tao 1 service tuong ung voi controller, service nay chua nhung method can thiet cho controller 
+ 
+      import Printer from "../models/settings/Printer"
+      import AvailablePrinter from "../models/settings/AvailablePrinter"
+      import GenericService from "./GenericService"
+      import axios from 'axios'
+
+      class PrinterService extends GenericService<Printer> {
+        public static readonly instance: PrinterService = new PrinterService()
+
+        private constructor() {
+          super('printer')
+        }
+
+        public static getInstance() : PrinterService {
+          return PrinterService.instance
+        }
+
+        public async getPrinterList() : Promise<AvailablePrinter[]>{
+          return axios.get("/api/printer/list").then(response => response.data)
+
+        }
+
+      }
+
+      export default PrinterService
+  + Tao 1 model des données dung cho Service 
+      import Model from "../Model"
+
+      class AvailablePrinter extends Model {
+        public nom: string = ""
+        public url: string = ""
+      }
+
+      export default AvailablePrinter
+  + dung hyperscript de dien 
+  + dung toaster
+  import Controller from '@core/Controller'
+
+    import PrinterService from '../../services/PrinterService'
+
+    import h from 'hyperscript'
+    import Form from '@core/Form'
+    import toaster from '@autoprog/core-client/src/export/toaster'
+
+    class PrinterController extends Controller {
+
+      public constructor(private el: HTMLElement) {
+        super()
+
+
+        this.shouldInit()
+      }
+
+      private async shouldInit() {
+        await this.initForm()
+        this.initButton()
+      }
+
+      private async initForm() {
+        const N_form = this.el.querySelector('#printer-form') as HTMLFormElement
+
+        const printers = await PrinterService.getPrinterList()
+
+        for (let i = printers.length - 1; i >= 0; i--) {
+          let printer = printers[i]
+
+          const N_row = h('.form-group.row', {}, 
+            h('label.col-sm-2.col-form-label', {}, parameter.label), 
+            h('div.col-sm-10', {}, h('input.form-control', { type: 'text', id: parameter.ID, name: parameter.ID, value: parameter.value })))
+
+            N_form.prepend(N_row)
+        }
+      }
+
+      private initButton() {
+        const N_save = this.el.querySelector("#save") as HTMLButtonElement
+        const N_form = this.el.querySelector('form') as HTMLFormElement
+
+        N_save.addEventListener('click', async () => {
+          const form = new Form(N_form)
+          const data = form.getData()
+
+          const alldata = await PrinterService.getInstance().getAll()
+
+
+          Object.keys(data).forEach(keyParameter => {
+
+            const index = alldata.findIndex(transaction => transaction.ID === +keyParameter)
+            alldata[index].value = data[keyParameter] as string
+
+          })
+
+          await ParameterService.getInstance().updateAll(alldata)
+          toaster.success('Sauvegarde reussi')
+        })
+      }
+
+
+      public destructor() {
+
+      }
+    }
+    export default PrinterController;
+- Tao template cho page: 
+  + template duoi dang html, tao khung co san sau do dung controller de them nhung composant vao sau 
